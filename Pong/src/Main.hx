@@ -140,6 +140,7 @@ class Main extends Sprite
 		var randomAngle:Float = (Math.random() * Math.PI / 2) - 45;
 		ballMovement.x = direction * Math.cos(randomAngle) * ballSpeed;
 		ballMovement.y = Math.sin(randomAngle) * ballSpeed;
+		ball.width = ball.height = 100;
 	}
 	
 	private function setGameState(state:GameState):Void
